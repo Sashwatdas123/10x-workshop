@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropertyHub - Find Your Dream Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>PropertyHub</h2>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-link active" data-filter="all">Home</a>
+                <a href="#" class="nav-link" data-filter="rent">Rent</a>
+                <a href="#" class="nav-link" data-filter="buy">Buy</a>
+            </nav>
+            
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search properties by name, location, or features...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="auth-buttons">
+                <button class="signup-btn">Sign Up</button>
+                <button class="login-btn">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Property Listings -->
+                <section class="property-section">
+                    <div class="section-header">
+                        <h2>Featured Properties</h2>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="rent">For Rent</button>
+                            <button class="filter-btn" data-filter="buy">For Sale</button>
+                        </div>
+                    </div>
+                    
+                    <div class="properties-grid" id="propertiesGrid">
+                        <!-- Properties will be dynamically loaded here -->
+                    </div>
+                    
+                    <div class="no-results" id="noResults" style="display: none;">
+                        <p>No properties found matching your search criteria.</p>
+                    </div>
+                </section>
+
+                <!-- Ads Section -->
+                <aside class="ads-section">
+                    <div class="ads-container">
+                        <h3>Featured Services</h3>
+                        
+                        <div class="ad-card">
+                            <i class="fas fa-percentage"></i>
+                            <h4>Premium Mortgage</h4>
+                            <p>Get the best rates for your dream home</p>
+                            <button class="ad-btn">Learn More</button>
+                        </div>
+                        
+                        <div class="ad-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Home Insurance</h4>
+                            <p>Protect your investment with comprehensive coverage</p>
+                            <button class="ad-btn">Get Quote</button>
+                        </div>
+                        
+                        <div class="ad-card">
+                            <i class="fas fa-user-tie"></i>
+                            <h4>Real Estate Agent</h4>
+                            <p>Professional guidance for buying & selling</p>
+                            <button class="ad-btn">Contact Now</button>
+                        </div>
+                        
+                        <div class="ad-card">
+                            <i class="fas fa-calculator"></i>
+                            <h4>Property Valuation</h4>
+                            <p>Get accurate market value estimates</p>
+                            <button class="ad-btn">Value Now</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Data Links</h4>
+                    <ul>
+                        <li><a href="#">Property Database</a></li>
+                        <li><a href="#">Market Analytics</a></li>
+                        <li><a href="#">Price Trends</a></li>
+                        <li><a href="#">Neighborhood Data</a></li>
+                        <li><a href="#">Investment Reports</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@propertyhub.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate Ave, City, State 12345</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 PropertyHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
